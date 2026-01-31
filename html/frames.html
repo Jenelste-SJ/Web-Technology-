@@ -9,9 +9,18 @@
     <h1>IFrame Tag</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia beatae dolorem iure ullam aliquid optio suscipit, minima delectus aspernatur accusamus sunt saepe officiis omnis incidunt molestiae velit repellendus odit!</p>
     <!-- Iframe -->
+     <!-- no scrolling in iframe-->
     <iframe src="https://www.kodnest.com" width="30%" height="80%" frameborder="0" scrolling="no"></iframe>
-    <iframe src="images.html" width="30%" height="80%" frameborder="5"></iframe>
-    <iframe srcdoc="<h1>Hello from Kodnest</h1><br><a href='https://www.kodnest.com' target='_self'>Visit Kodnest</a>" width="30%" height="80%" frameborder="0"></iframe>
+    <!-- html file in iframe-->
+    <iframe src="images.html" width="30%" height="80%" frameborder="5"></iframe>m
+    <!-- empty iframe -->
+    <iframe src="" width="30%" height="80%" frameborder="5" name="frame3"></iframe>
+    <!-- iframe with srcdoc -->
+    <iframe srcdoc="<h1>Hello from Kodnest</h1><br><a href='https://www.kodnest.com' target='frame3'>Visit Kodnest</a>" width="30%" height="80%" frameborder="5" name="frame4"></iframe>
+    <!-- Location in iframe -->
+     <h1>Loction of Kumaracoil</h1>
+     <address>Kumaracoil, Tamil Nadu, India</address>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7897.165955056087!2d77.3422827930575!3d8.244619685138986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f8520c2ac7b3%3A0xdd1bb2d40714c737!2sKumaracoil%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1769856825155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </body>
 </html>
