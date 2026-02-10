@@ -8,12 +8,49 @@
 <body>
     <h1>Captcha Form</h1>
     <form >
-        <label for="Captcha">Enter Captcha:</label>
-        <input type="text" id="Captcha"><br>
-        <button>submit</button>
+        <!-- Cpatcha -->
+        <label for="Captcha">Enter Captcha: <span style="color: red;">*</span></label>
+        <input type="text" id="Captcha" name="Captcha" placeholder="Enter Captcha here" title="Enter Captcha in 30 secs" required><br>
+        
+        <!-- Username -->
+         <label for="User">Username: <span style="color: red;">*</span></label>
+         <input type="text" id="User" name="username" placeholder="Enter Username here" title="No special charcters allowed" required><br>
+
+         <!-- Email -->
+          <label for="mail">Email: <span style="color: red;">*</span></label>
+          <input type="email" id="mail" name="Email" placeholder="Enter email here" required><br>
+
+        <!-- Password -->
+           <label for="pass">Password:</label>
+           <input type="password" id="pass" name="password" placeholder="Enter password"><br>
+
+        <!-- Phone -->
+         <label for="phone">Mobile number:</label>
+         <input type="tel" name="number" id="phone" placeholder="Enter valid mobile number"><br>
+
+         <!-- Age -->
+          <label for="Age">Age:</label>
+          <input type="number" name="age" id="age" min="16" max="45"><br>
+
+         <!-- Date -->
+          <label for="Date">DOB:</label>
+          <input type="date" id="date" name="date" placeholder="Enter DOB"><br>
+
+          <!-- Time -->
+           <label for="Time">Time:</label>
+           <input type="time" name="time" id="Time"><br>
+
+           <!-- Datetime -->
+            <label for="dt">DOB with time:</label>
+            <input type="datetime-local" name="DOB" id="dt"><br>
+           <!--URL  -->
+           <label for="url">URL</label>
+           <input type="url" name="url" id="url"><br>
+
+        <button type="submit">Submit</button>
         <!-- non breakable space -->
         &nbsp;  
-        <button>cancel</button>
+        <input type="reset" value="Cancel" >
     </form>
 </body>
 </html>
