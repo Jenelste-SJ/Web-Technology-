@@ -5,52 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
-<body>
+<body style="background-color: antiquewhite;">
     <h1>Captcha Form</h1>
     <form >
+        <!-- Fieldset -->
+         <fieldset><br>
+            <legend>Personal Details:</legend>
         <!-- Cpatcha -->
         <label for="Captcha">Enter Captcha: <span style="color: red;">*</span></label>
-        <input type="text" id="Captcha" name="Captcha" placeholder="Enter Captcha here" title="Enter Captcha in 30 secs" required><br>
+        <input type="text" id="Captcha" name="Captcha" placeholder="Enter Captcha here" title="Enter Captcha in 30 secs" required ><br><br>
         
         <!-- Username -->
-         <label for="User">Username: <span style="color: red;">*</span></label>
-         <input type="text" id="User" name="username" placeholder="Enter Username here" title="No special charcters allowed" required><br>
+         <label for="User">Username:</label>
+         <input type="text" id="User" name="username" placeholder="Enter Username here" title="No special charcters allowed" ><br><br>
 
          <!-- Email -->
-          <label for="mail">Email: <span style="color: red;">*</span></label>
-          <input type="email" id="mail" name="Email" placeholder="Enter email here" required><br>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="Email" placeholder="Enter email here" ><br><br>
 
         <!-- Password -->
            <label for="pass">Password:</label>
-           <input type="password" id="pass" name="password" placeholder="Enter password"><br>
+           <input type="password" id="pass" name="password" placeholder="Enter password" autocomplete="off"><br><br>
 
         <!-- Phone -->
          <label for="phone">Mobile number:</label>
-         <input type="tel" name="number" id="phone" placeholder="Enter valid mobile number"><br>
+         <input type="tel" name="number" id="phone" placeholder="Enter valid mobile number"><br><br>
 
          <!-- Age -->
           <label for="Age">Age:</label>
-          <input type="number" name="age" id="age" min="16" max="45"><br>
+          <input type="number" name="age" id="age" min="16" max="45"><br><br>
 
          <!-- Date -->
           <label for="Date">DOB:</label>
-          <input type="date" id="date" name="date" placeholder="Enter DOB"><br>
+          <input type="date" id="date" name="date" placeholder="Enter DOB"><br><br>
 
-          <!-- Time -->
-           <label for="Time">Time:</label>
-           <input type="time" name="time" id="Time"><br>
+        <!-- Time -->
+           <label for="Time">Check in-Time:</label>
+           <input type="time" name="time" id="Time"><br><br>
 
-           <!-- Datetime -->
+        <!-- Datetime -->
             <label for="dt">DOB with time:</label>
-            <input type="datetime-local" name="DOB" id="dt"><br>
-           <!--URL  -->
-           <label for="url">URL</label>
-           <input type="url" name="url" id="url"><br>
+            <input type="datetime-local" name="DOB" id="dt"><br><br>
 
-        <button type="submit">Submit</button>
+        </fieldset>
+        <br><br>
+
+
+        <fieldset> <br>
+            <legend>Professional Details:</legend> 
+        <!--URL  -->
+           <label for="url">URL</label>
+           <input type="url" name="url" id="url"><br><br>
+
+        <!-- Checkbox -->
+         <label >Select language:</label>
+         <label>
+            <input type="checkbox" name="op1" value="HTML">HTML
+         </label>
+         <label>
+            <input type="checkbox" name="op2" value="CSS">CSS
+         </label>
+         <label>
+            <input type="checkbox" name="op3" value="JS">JavaScript
+         </label><br><br>
+
+         <!-- Radio Buttons -->
+          <label>Enter gender:</label>
+          <label>
+            <input type="radio" name="gender" value="M">MALE
+          </label>
+          <label>
+            <input type="radio" name="gender" value="F">FEMALE
+          </label><br><br>
+
+        <!-- File Upload -->
+           <label for="file">Upload the PAN:</label>
+           <input type="file" id="file" name="fileUpload" accept=".pdf"><br><br>
+
+        <!-- Range -->
+         <label for="rate">Rate yourself in HTML:</label>
+         <input type="range" name="rate" id="rate" min="1" max="10" value="1"><br><br>
+
+        <!-- Color  -->
+         <label for="color">Select your favourite colour:</label>
+         <input type="color" name="color" id="color"> <br><br>
+
+        <!-- Image -->
+         <label for="images">Upload image:</label>
+         <input type="image" name="images" id="images"><br><br>
+
+        <!-- Search -->
+          <label for="Search">Search</label>
+          <input type="search" name="search" id="Search"><br><br>
+
+        <!-- Select(Dropdown) -->
+           <label for="Dropdown">Select your favourite fruit:</label>
+           <select name="Fruits" id="Dropdown" size="2">
+            <option >Apple</option>
+            <option selected>Orange</option>
+            <option value="grape">Grapes</option>
+           </select><br><br>
+
+        </fieldset>  
+        <br>   
+         
+        <!-- Textare(oru text box) -->
+         <label for="feed">Feedback:</label>
+         <textarea name="feed" id="feed" rows="7" cols="40" placeholder="Feedback here"></textarea><br>
+
+
+         <!-- Button -->
+         <button type="submit">Submit</button>
         <!-- non breakable space -->
         &nbsp;  
-        <input type="reset" value="Cancel" >
+        <input type="reset" value="Cancel" >    
     </form>
 </body>
 </html>
