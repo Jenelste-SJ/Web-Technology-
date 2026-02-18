@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>login page</h1>
+    <form >
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" pattern="^[A-Z]{1}[a-z]{1,49}$">
+        <br>
+
+        <label for="name1">Name1:</label>
+        <input type="text" id="name1" name="Name1" pattern="^[A-Z]{1}[a-z]{1,49}[ ][A-Z]{1}[a-z]{1,49}$">
+        <br>
+
+        <label for="num">Phone:</label>
+        <input type="text" id="num" name="num" pattern="^\d{3}-\d{3}-\d{4}$">
+        <br>
+
+        <label for="num1">Phone1:</label>
+        <input type="text" id="num1" name="num1" pattern="^\+91\s[6789]{1}[0-9]{9}$">
+        <br>
+
+        <!-- . is for every charcter except newline -->
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" pattern="^.{8,}$">
+        <br>
+
+        <!-- ?= must include  -->
+         <!-- .* any no. of times -->
+        <label for="pwd1">Password:</label>
+        <input type="password" name="pwd1" id="pwd1" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$">
+        <br>
+
+
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
